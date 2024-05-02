@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense App</title>
+</head>
+<body>
+    <form onsubmit="handleFormSubmit(event)">
+        <label>Choose expenseamount:</label>
+        <input type="number" name="amount" id="amount">
+        <label>Choose description:</label>
+        <input type="text" name="description" id="description">
+        <label>Choose a category:</label>
+        <select name="category" id="category">
+            <option>Travel</option>
+            <option>Studies</option>
+            <option>Entertainment</option>
+            <option>Electricity</option>
+            <option>Fuel</option>
+          </select>
+        <button type = "submit">Add expense</button>
+    </form>
+    <ul id ="listOfExpenseItems"></ul>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/index.js"></script>
+    <script src=""></script>
+</body>
+</html>
